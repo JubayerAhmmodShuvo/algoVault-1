@@ -1,1 +1,2 @@
-design will add here
+loginpage 
+signup page
