@@ -51,12 +51,7 @@ h1{
    font-size: 1em;
    width: 113px;
    border-radius:5px;
-   margin-left: 30vw;
- 
-   align-items: center!important;
-   margin-bottom: 8vh;
-
-  
+    margin-bottom: 8vh;
 }
 .contact-btn button:hover{
     text-decoration: underline;
