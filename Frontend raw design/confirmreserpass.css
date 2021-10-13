@@ -94,7 +94,7 @@ body {
   /* navbar */
   .navbar{
     background-color: #094F6C;
-    
+    height: 7vh!important;
  }
 
 .navbar-brand{
