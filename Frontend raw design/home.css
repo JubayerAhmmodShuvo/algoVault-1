@@ -46,6 +46,7 @@ footer a:hover{
  /*navsection*/
  .navbar{
     background-color: #094F6C;
+    height: 5vh!important;
     
  }
 .navbar-brand{
@@ -57,8 +58,9 @@ footer a:hover{
  
  }
 
-
-     
+    .breadcrumb-item{
+        margin-top: 20px;
+    } 
  
 
  
@@ -68,7 +70,7 @@ font-size: 1rem;
  color: #fff;
 text-decoration: none;
 text-align: center!important;
-padding: 5px!important;
+
 
 
  }
