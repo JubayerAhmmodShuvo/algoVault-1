@@ -52,31 +52,24 @@ footer a:hover{
  font-family: 'Lobster', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 2rem!important;
+    font-size: 1.5rem!important;
     font-weight: 500;
  
  }
- .box{
-    font-family: 'Poppins';
-    font-weight: bold;
-    border: 0px solid #818FF2;
-    background-color: #818FF2;
-   
-    border-radius: 30px;
-    height: 4vh;
-    width: 160px;
-   padding: 6.5px;
+
+
      
  
 
- }
+ 
  .box li a {
-     font-size: 1rem;
-     margin-left: 5px;
-     margin-top: 20px;
-     align-items: center;
-     color: #fff;
-     text-decoration: none;
+    font-family: '', cursive;
+font-size: 1rem;
+ color: #fff;
+text-decoration: none;
+text-align: center!important;
+padding: 5px!important;
+
 
  }
  .box li a:hover{
@@ -198,5 +191,7 @@ form .bt:hover{
     opacity: 1;
 }
 }
+
+
 
 /* home part in time */
