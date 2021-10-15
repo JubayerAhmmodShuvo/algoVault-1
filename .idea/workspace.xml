@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55847da1-cb91-42c5-8a7f-ebe330ace8d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/algoVault.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template/Notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algoVault_proj/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algoVault_proj/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algoVault_proj/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algoVault_proj/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algoVault_proj/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algoVault_proj/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/migrations/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="f080a544-23d1-4858-945c-81552dbbf3c9" />
+  <component name="ProjectId" id="1zS7nlEHVEwe5saDDZaZ7GTMhr1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55847da1-cb91-42c5-8a7f-ebe330ace8d9" name="Default Changelist" comment="" />
+      <created>1634129808923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634129808923</updated>
+      <workItem from="1634129811106" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1634129864064">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1634129864064" />
+  </component>
+</project>

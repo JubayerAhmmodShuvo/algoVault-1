@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+  <section>
+
+     <!-- navbar  -->
+   <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AlgoVault</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" area-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Tutorials</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        </ul>
+        <img src="" class="img-thumbnail rounded-circle profile" alt="...">
+     
+      <!--<div class="box">
+                <div class="breadcrumb ">
+                    
+                  <li class="breadcrumb-item"><a href="#">Login</a></li>
+                  <li class="breadcrumb-item"><a href="#">Register</a></li>
+                </div>
+            </div>
+             
+            <button class="bt" type="submit">Register</button> -->
+            <!-- <button class="bt" type="submit">Login</button> -->
+           
+    </div>
+ 
+    </div>
+
+    </nav>
+    </section>
+    <!-- launching page  -->
+    <section>
+    <div class="container-fluid launching">
+        
+        <div class="content">
+         <p>Website Is Under Maintenance</p>
+         <h1>We're <span>Launching</span> Soon</h1>
+         <div class="launch-time">
+             <div>
+                 <p id="days">00</p>
+                 <span>Days</span>
+             </div>
+             <div>
+                 <p id="hours">00</p>
+                 <span>Hours</span>
+             </div>
+             <div>
+                 <p id="minutes">00</p>
+                 <span>Minutes</span>
+             </div>
+             <div>
+                 <p id="seconds">00</p>
+                 <span>Seconds</span>
+             </div>
+         </div>
+         <button type="button">Learn More <img src="triangle.png" alt=""></button>
+         
+        </div>
+        <img src="rocket.png" class="rocket">
+     </div>
+    </section>
+    
+    <!-- launching page  -->
+
+
+
+
+
+
+
+
+
+        <footer  >
+            <h6> <a href="#">Contact Us</a> </h6>
+            <h6> <a href="#">@AlgoVault</a>,INC</h6>
+          
+           
+            
+        </footer>
+
+    
+
+  <!-- launchingpage -->
+  <script>
+        var countDownDate = new Date ("Nov 16, 2021 00:00:00").getTime();
+  var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now ;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerHTML =days;
+          document.getElementById("hours").innerHTML =hours;
+          document.getElementById("minutes").innerHTML =minutes;
+          document.getElementById("seconds").innerHTML =seconds;
+
+  },1000);
+  </script>
+<!-- launching page -->
+
+    <script src="all.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
