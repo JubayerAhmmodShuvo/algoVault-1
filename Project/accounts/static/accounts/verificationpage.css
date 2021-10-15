@@ -1,0 +1,139 @@
+
+body {
+    background-color: FFFFFF !important;
+    color: rgb(204, 204, 204) !important;
+}
+
+.login-form{
+	padding: 50px 0;
+}
+
+.login-form form{
+    background-color: #B7E0F1;
+    max-width: 500px;
+    height: 400px;
+    margin: auto;
+    padding: 40px 60px;
+  border-radius: 12px;
+    box-shadow: 9px 8px 16px 5px rgba(0, 0, 0, 0.34);
+    margin-top: 10vh;
+}
+
+.login-form .form-name{
+	text-align: center;
+    color: #020000;
+   
+    height: 100px;
+    margin: auto;
+    margin-bottom: 7vh;
+
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+   
+}
+h4{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1rem!important;
+    margin-top: 2vh!important;
+}
+
+.login-form .item{
+	border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+   
+}
+
+.login-form .login-account{
+    border-radius: 30px;
+    font-size:1rem;
+    font-weight: bold;
+    background-color: #818FF2;
+    text-align: center;
+    border: none;
+    color: white;
+    
+}
+
+.login-form .form-group a {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 36px;
+    text-decoration: none;
+    margin-left: 9px;
+
+
+}
+
+.login-form .form-group a:hover{
+    text-decoration: underline;
+}
+
+
+.btn {
+    
+    width: 103px;
+    padding: 0;
+    margin: 0 auto;
+    border: 0;
+    text-align: center;
+    border-radius: 10px !important;
+    float:right;
+    }
+    
+    
+  
+  
+  .btn:hover {
+    text-decoration: none;
+    background-color: rgb(148, 181, 231);
+    color: black;
+    
+  }
+/* navbar */
+.navbar{
+    background-color: #094F6C;
+    
+ }
+.navbar-brand{
+ font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem!important;
+    font-weight: 500;
+ 
+ }
+ form .bt{
+     background-color: #818FF2;
+     padding: 5px 5px;
+     border: 0;
+     font-family: 'Poppins', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+     color: #FFFFFF;
+     font-size: 1em;
+     width: 123px;
+     border-radius: 32px;
+     margin-right: 25px;
+    
+}
+form .bt:hover{
+    text-decoration: underline;
+    background-color: rgb(148, 181, 231);
+    color: black;
+
+}
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 0px;
+    justify-content: space-between;
+    margin-top:1.5vh;
+}
