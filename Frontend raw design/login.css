@@ -38,6 +38,7 @@ body {
 	border-radius: 10px;
     margin-bottom: 25px;
     padding: 10px 20px;
+    margin-top: 1.5vh;
    
 }
 
@@ -89,6 +90,12 @@ body {
     background-color: rgb(148, 181, 231);
     color: black;
     
+  }
+  p{
+      font-size: small;
+      color: rgb(255, 0, 0);
+      margin-bottom: 2vh!important;
+      
   }
 
   /*footer*/
