@@ -2,35 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55847da1-cb91-42c5-8a7f-ebe330ace8d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/algoVault.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/Notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algoVault_proj/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algoVault_proj/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algoVault_proj/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algoVault_proj/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algoVault_proj/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algoVault_proj/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/migrations/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend raw design/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend raw design/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.idea/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.idea/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.idea/inspectionProfiles/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.idea/inspectionProfiles/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/Templates/accounts/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/Templates/accounts/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/Templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/Templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/Templates/accounts/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/Templates/accounts/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/Templates/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/Templates/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/migrations/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/migrations/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/static/accounts/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/static/accounts/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/static/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/static/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/algoVault_proj/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/algoVault_proj/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/algoVault_proj/static/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/algoVault_proj/static/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/Templates/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/Templates/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/Templates/main_app/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/Templates/main_app/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/migrations/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/migrations/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/static/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/static/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/static/main_app/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/static/main_app/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/static/main_app/images/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/static/main_app/images/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/css/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/css/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/css/vendor/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/css/vendor/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/css/vendor/select2/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/css/vendor/select2/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/fonts/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/fonts/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/img/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/img/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/img/gis/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/img/gis/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/js/admin/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/js/admin/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/js/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/js/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/js/vendor/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/js/vendor/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/js/vendor/jquery/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/js/vendor/jquery/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/js/vendor/select2/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/js/vendor/select2/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/js/vendor/select2/i18n/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/js/vendor/select2/i18n/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/admin/js/vendor/xregexp/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/admin/js/vendor/xregexp/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/static/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Project/static/desktop.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634129808923</updated>
       <workItem from="1634129811106" duration="54000" />
+      <workItem from="1634373533286" duration="178000" />
     </task>
     <servers />
   </component>

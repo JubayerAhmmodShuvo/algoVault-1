@@ -63,6 +63,8 @@
 <div class="container">
     <div class="login-form">
         <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+
             <div class="form-name">
                 <span><i>Log In</i></span>
 
