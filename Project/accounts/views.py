@@ -9,7 +9,7 @@ def user_login(request):
 
     else:
         try:
-            user = User.objects.get(email=request.POST['email'])
+            # user = User.objects.get(email=request.POST['email'])
             user = User.objects.get(username=request.POST['username'])
             user = auth.authenticate(username=user.username, password=request.POST['password'])
 
