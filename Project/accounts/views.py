@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
+from django.contrib.auth.decorators import login_required
 
 def user_login(request):
     if request.method == 'GET':
@@ -49,3 +50,9 @@ def user_registration(request):
 
         else:
             return render(request, 'accounts/signup.html', {'error':'Please Fill Up all the Information'})
+
+
+@login_required(login_url='login')
+def user_logout(request):
+    auth.logout(request)
+    return redirect('home')
