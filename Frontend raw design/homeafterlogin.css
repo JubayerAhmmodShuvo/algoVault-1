@@ -85,18 +85,35 @@ footer a:hover{
      text-decoration: underline;
  }
 
- /* form .bt{ 
+
+ /*navsection*/
+ .navbar{
+    background-color: #094F6C;
+    height: 7vh!important;
+    
+ }
+.navbar-brand{
+ font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem!important;
+    font-weight: 500;
+ 
+ }
+ form .bt{
      background-color: #818FF2;
      padding: 5px 5px;
      border: 0;
+
      font-family: 'Poppins', sans-serif;
      font-style: normal;
      font-weight: 400;
      color: #FFFFFF;
      font-size: 1em;
-     width: 123px;
+     width: 113px;
      border-radius: 32px;
-     margin-right: 25px;
+     margin-right: 10px;
+     margin-left: 1.5vw;
     
 }
 form .bt:hover{
@@ -104,16 +121,16 @@ form .bt:hover{
     background-color: rgb(148, 181, 231);
     color: black;
 
-}*/
+}
 .nav-link{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+   
     font-size: 1em;
     line-height: 0px;
     justify-content: space-between;
-    margin-top:1.5vh;
+    margin-top: 1.5vh;
 }
-
 
 
 /* homepart in time */
