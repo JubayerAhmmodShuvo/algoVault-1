@@ -49,9 +49,9 @@
         </ul>
 
     {% if user.is_authenticated %}
-        <form class="d-flex profilesec">
+        <form class="d-flex">
             <img src="" class="img-thumbnail rounded-circle profile" alt="...">
-            <button class="bt" type="submit" href="{% url 'logout' %}">Log Out</button>
+            <button class="logout-profile" type="submit" href="{% url 'logout' %}">Log Out</button>
         </form>
 
     {% else %}
