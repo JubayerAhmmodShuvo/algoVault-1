@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="55847da1-cb91-42c5-8a7f-ebe330ace8d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend raw design/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend raw design/desktop.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/accounts/Templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/Templates/accounts/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/main_app/Templates/main_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/Templates/main_app/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Project/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
