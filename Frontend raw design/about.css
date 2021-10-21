@@ -65,9 +65,17 @@ h5{
  
 }
 .about-project h1{
-    color: rgb(0, 110, 255);
+    color: rgb(0, 1, 3);
     text-align: center;
     font-family: 'lobster',poppins;
+}
+.about-project h1:after{
+     content:'';
+    background:#333;
+    display:block;
+    height:3px;
+    width: 17vw;
+    margin: 10px auto;
 }
 
 .team{
