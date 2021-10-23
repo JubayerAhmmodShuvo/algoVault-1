@@ -8,20 +8,24 @@ def user_login(request):
         return render(request, 'accounts/login.html')
 
     else:
-        try:
-            # user = User.objects.get(email=request.POST['email'])
-            user = User.objects.get(username=request.POST['username'])
-            user = auth.authenticate(username=user.username, password=request.POST['password'])
+        if request.POST['username'] and request.POST['password']:
+            try:
+                # user = User.objects.get(email=request.POST['email'])
+                user = User.objects.get(username=request.POST['username'])
+                user = auth.authenticate(username=user.username, password=request.POST['password'])
 
-            if user is not None:
-                auth.login(request, user)
-                return redirect('home')
+                if user is not None:
+                    auth.login(request, user)
+                    return redirect('home')
 
-            else:
-                return render(request, 'accounts/login.html', {'error': 'Username/Email and Password do not match'})
+                else:
+                    return render(request, 'accounts/login.html', {'error': 'Username/Email and Password do not match'})
 
-        except User.DoesNotExist:
-            return render(request, 'accounts/login.html', {'error': 'User is not registered'})
+            except User.DoesNotExist:
+                return render(request, 'accounts/login.html', {'error': 'User is not registered'})
+
+        else:
+            return render(request, 'accounts/login.html', {'error': 'Username or Password cannot be empty!'})
 
 def user_registration(request):
     if request.method == 'GET':

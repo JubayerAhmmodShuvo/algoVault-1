@@ -1,0 +1,180 @@
+body {
+    background-color: FFFFFF !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+
+/*navsection*/
+
+.navbar {
+    background-color: #094F6C;
+    height: 7vh!important;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem!important;
+    font-weight: 500;
+}
+
+form .bt {
+    background-color: #818FF2;
+    padding: 5px 5px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 1em;
+    width: 123px;
+    border-radius: 32px;
+    margin-right: 25px;
+}
+
+form .bt:hover {
+    text-decoration: underline;
+    background-color: rgb(148, 181, 231);
+    color: black;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 0px;
+    justify-content: space-between;
+    margin-top: 1.5vh;
+}
+
+h5 {
+    margin-top: 5vh!important;
+}
+
+.about-project {
+    /* background-color: #B7E0F1!important; */
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+    border-radius: 7px;
+    box-shadow: 9px 8px 16px 5px rgba(0, 0, 0, 0.25);
+}
+
+.about-project p {
+    color: #000000!important;
+    text-align: justify;
+}
+
+.about-project h1 {
+    color: rgb(0, 1, 3);
+    text-align: center;
+    font-family: 'lobster', poppins;
+}
+
+.about-project h1:after {
+    content: '';
+    background: rgb(241, 139, 6);
+    display: block;
+    height: 3px;
+    width: 17vw;
+    margin: 10px auto;
+}
+
+.team {
+    margin: 70px 0px;
+}
+
+.team h1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    /*font-weight: bold;*/
+    letter-spacing: 2px color: #333;
+    padding-bottom: 10px;
+}
+
+.team h1:after {
+    content: '';
+    background: rgb(241, 139, 6);
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.profile {
+    margin-top: 25px;
+}
+
+.profile .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.profile h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.img-box:after {
+    content: '';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul {
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%)
+}
+
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.img-box a {
+    color: #fff;
+}
+
+.img-box:hover:after {
+    opacity: 1;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box a:hover li {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.img-box:after,
+.img-box ul,
+.img-box ul li {
+    transition: all 0.5s ease-in-out 0s;
+}
