@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="homeafterlogin.css">
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
-<body>
-  <section>
 
-     <!-- navbar  -->
-   <nav class="navbar navbar-expand-md navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">AlgoVault</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <section>
+
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AlgoVault</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-1">
-        <li class="nav-item">
-            <a class="nav-link active" area-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Tutorials</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-        </li>
-        </ul>
-      
-       
-      <!--<div class="box">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" area-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tutorials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+
+
+                    <!--<div class="box">
                 <div class="breadcrumb ">
                     
                   <li class="breadcrumb-item"><a href="#">Login</a></li>
@@ -55,53 +59,62 @@
             </div>
              
             <button class="bt" type="submit">Register</button> -->
-            <!-- <button class="bt" type="submit">Login</button> -->
-          
-    </div>
-    <form class="d-flex">
-        <img src="" class="img-thumbnail rounded-circle profile" alt="...">
-        <button class="logout-profile" type="submit">Log Out</button>
-        </form>
- 
-    </div>
- 
- 
-    </div>
+                    <!-- <button class="bt" type="submit">Login</button> -->
 
-    </nav>
+                </div>
+                <form class="d-flex">
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             User_ID
+            </button>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Notifications</a>
+
+                        </div>
+                    </div>
+                    <button class="logout-profile" type="submit">Log Out</button>
+                </form>
+
+            </div>
+
+
+            </div>
+
+        </nav>
     </section>
     <!-- launching page  -->
     <section>
-    <div class="container-fluid launching">
-        
-        <div class="content">
-         <p>Website Is Under Maintenance</p>
-         <h1>We're <span>Launching</span> Soon</h1>
-         <div class="launch-time">
-             <div>
-                 <p id="days">00</p>
-                 <span>Days</span>
-             </div>
-             <div>
-                 <p id="hours">00</p>
-                 <span>Hours</span>
-             </div>
-             <div>
-                 <p id="minutes">00</p>
-                 <span>Minutes</span>
-             </div>
-             <div>
-                 <p id="seconds">00</p>
-                 <span>Seconds</span>
-             </div>
-         </div>
-         <button type="button">Learn More <img src="triangle.png" alt=""></button>
-         
+        <div class="container-fluid launching">
+
+            <div class="content">
+                <p>Website Is Under Maintenance</p>
+                <h1>We're <span>Launching</span> Soon</h1>
+                <div class="launch-time">
+                    <div>
+                        <p id="days">00</p>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <p id="minutes">00</p>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <p id="seconds">00</p>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <button type="button">Learn More <img src="triangle.png" alt=""></button>
+
+            </div>
+            <img src="rocket.png" class="rocket">
         </div>
-        <img src="rocket.png" class="rocket">
-     </div>
     </section>
-    
+
     <!-- launching page  -->
 
 
@@ -112,38 +125,41 @@
 
 
 
-        <footer  >
-            <h6> <a href="#">Contact Us</a> </h6>
-            <h6> <a href="#">@AlgoVault</a>,INC</h6>
-          
-           
-            
-        </footer>
+    <footer>
+        <h6> <a href="#">Contact Us</a> </h6>
+        <h6> <a href="#">@AlgoVault</a>,INC</h6>
 
-    
 
-  <!-- launchingpage -->
-  <script>
-        var countDownDate = new Date ("Nov 16, 2021 00:00:00").getTime();
-  var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = countDownDate - now ;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-          document.getElementById("days").innerHTML =days;
-          document.getElementById("hours").innerHTML =hours;
-          document.getElementById("minutes").innerHTML =minutes;
-          document.getElementById("seconds").innerHTML =seconds;
+    </footer>
 
-  },1000);
-  </script>
-<!-- launching page -->
+
+
+    <!-- launchingpage -->
+    <script>
+        var countDownDate = new Date("Nov 16, 2021 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        }, 1000);
+    </script>
+    <!-- launching page -->
 
     <script src="all.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
