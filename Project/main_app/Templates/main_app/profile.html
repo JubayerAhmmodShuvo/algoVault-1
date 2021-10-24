@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
 
 <head>
@@ -7,11 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="all.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main_app/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/all.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/bootstrap.min.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,13 +41,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-1">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Tutorials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="{% url 'aboutUs' %}">About Us</a>
                     </li>
                 </ul>
 
@@ -53,15 +55,14 @@
                 <form class="d-flex">
                     <div class="dropdown">
                         <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         User_ID
-        </button>
+                            {{ user.username }}
+                        </button>
                         <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
                             <a class="dropdown-item" href="#">Notifications</a>
-
                         </div>
                     </div>
-                    <button class="logout-profile" type="submit">Log Out</button>
+                    <button class="logout-profile" type="submit" formaction="{% url 'logout' %}">Log Out</button>
                 </form>
 
 
@@ -74,40 +75,42 @@
 
     <div class="container">
         <div class="login-form">
-            <form action="#">
+            <form action="#" method="POST">
+                {% csrf_token %}
+
                 <div class="form-name">
-                    <span>Update Profile</i></span>
+                    <span><i>Update Profile</i></span>
                     <!-- <p>error 404</p> -->
                 </div>
 
 
                 <fieldset disabled>
                     <div class="form-group">
-                        <label for="usernaem"> * Username:</label>
-                        <input type="text" class="form-control item " id="demo">
+                        <label for="username"> * Username:</label>
+                        <input type="text" class="form-control item " id="username" value="{{ user.username }}">
                     </div>
                 </fieldset>
                 <div class="form-group">
                     <label for="FullName">FullName:</label>
-                    <input type="text" class="form-control item" id="fullname" required="true">
+                    <input type="text" class="form-control item" id="fullname" required="true" name="fullname" value={{ name }}>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control item" id="email" required="true">
+                    <input type="email" class="form-control item" id="email" required="true" value="{{ user.email }}">
                 </div>
 
                 <div class="form-group">
                     <label for="password">Current Password:</label>
-                    <input type="password" class="form-control item" id="password">
+                    <input type="password" class="form-control item" id="current_password" name="current_password">
                 </div>
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password" class="form-control item" id="password">
+                    <input type="password" class="form-control item" id="new_password" name="new_password">
                 </div>
 
                 <div class="form-group">
                     <label for="repeat-password">Repeat-Password:</label>
-                    <input type="password" class="form-control item" id="password">
+                    <input type="password" class="form-control item" id="new_password2" name="new_password2">
                 </div>
 
 
@@ -118,7 +121,7 @@
 
 
                 <span class="col-mx-auto ml-3 float-right">
-                    <button type="submit" class="btn btn-light" id="cancel" name="btn2" value="1">Cancel</button>
+                    <button type="submit" class="btn btn-light" id="cancel" name="btn2" value="1" formaction="{% url 'profile' %}">Reset</button>
                 </span>
 
             </form>
@@ -157,8 +160,8 @@
 
 
 
-    <script src="all.js "></script>
-    <script src="bootstrap.bundle.min.js "></script>
+    <script src="{% static 'main_app/all.js' %}"></script>
+    <script src="{% static 'main_app/bootstrap.bundle.min.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>

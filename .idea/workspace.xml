@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55847da1-cb91-42c5-8a7f-ebe330ace8d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Project/accounts/Templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/Templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/accounts/static/accounts/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/accounts/static/accounts/all.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Project/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/Templates/main_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/Templates/main_app/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/static/main_app/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/static/main_app/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/main_app/static/main_app/homeafterlogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/main_app/static/main_app/homeafterlogin.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +43,7 @@
       <workItem from="1634373533286" duration="178000" />
       <workItem from="1634493255893" duration="553000" />
       <workItem from="1634493825380" duration="891000" />
+      <workItem from="1635000233409" duration="80000" />
     </task>
     <servers />
   </component>
@@ -49,9 +55,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1634493768704" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1634129864064">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1635000313240">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1634129864064" />
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1635000313240" />
   </component>
 </project>

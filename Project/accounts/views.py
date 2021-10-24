@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
+from main_app.models import Profile
 
 def user_login(request):
     if request.method == 'GET':
@@ -46,6 +47,10 @@ def user_registration(request):
                     if request.POST['pass1'] == request.POST['pass2']:
                         user = User.objects.create_user(username=request.POST['username'], password=request.POST['pass1'], email=request.POST['email'])
                         auth.login(request, user)
+                        fullname = request.POST['fullname'].strip().split()
+                        profile = Profile(user=user, firstName=fullname[0], lastName=fullname[1])
+                        profile.save()
+
                         return redirect('home')
 
                     else:
