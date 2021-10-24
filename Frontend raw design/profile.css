@@ -115,3 +115,9 @@ h5 {
 span .upbtn {
     background-color: #818FF2;
 }
+
+p {
+    font-size: small;
+    color: rgb(255, 0, 0);
+    margin-bottom: 2vh!important;
+}
