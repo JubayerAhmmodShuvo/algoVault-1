@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from main_app.models import Profile
+from .CredentialChecker import passwordCheck, usernameCheck
 
 def user_login(request):
     if request.method == 'GET':
@@ -45,10 +46,26 @@ def user_registration(request):
 
                 except User.DoesNotExist:
                     if request.POST['pass1'] == request.POST['pass2']:
+                        ck = usernameCheck(request.POST['username'])
+                        if ck!=1:
+                            if ck == 2:
+                                return render(request, 'accounts/signup.html', {'error': 'Username must be 4-15 characters long.'})
+                            else:
+                                return render(request, 'accounts/signup.html', {'error': 'Username can contain only letters, digits and under_scores'})
+
+                        ck = passwordCheck(request.POST['pass1'])
+                        if ck != 1:
+                            if ck == 2:
+                                return render(request, 'accounts/signup.html',
+                                              {'error': 'Password must be 6-30 characters long.'})
+                            else:
+                                return render(request, 'accounts/signup.html',
+                                              {'error': 'Password must contain both letters and digits'})
+
                         user = User.objects.create_user(username=request.POST['username'], password=request.POST['pass1'], email=request.POST['email'])
                         auth.login(request, user)
-                        fullname = request.POST['fullname'].strip().split()
-                        profile = Profile(user=user, firstName=fullname[0], lastName=fullname[1])
+                        fullname = request.POST['fullname']
+                        profile = Profile(user=user, fullName=fullname)
                         profile.save()
 
                         return redirect('home')
