@@ -114,7 +114,13 @@ footer a:hover{
 }
 
 
-/* homepart in time */
+/* body */
+.card{
+    margin-top: 3vh;
+}
+
+
+/* homepart in time 
 *{
     margin:0px;
     padding: 0;
@@ -199,4 +205,4 @@ footer a:hover{
 }
 }
 
-/* home part in time */
+ home part in time */
