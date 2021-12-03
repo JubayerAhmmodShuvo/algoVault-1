@@ -102,7 +102,7 @@ footer  {
     text-decoration: none;
     background-color: rgb(148, 181, 231);
     color:white;
-   margin-top: 0vh;
+   margin-top: 10vh;
    background: #094F6C;
    padding-top: 10px;
    height: 72px;
@@ -120,9 +120,35 @@ footer a:hover{
     text-decoration: underline;
     font-weight: bold;
 }
+.topicname{
+   margin-top: 7vh;
+   margin-bottom: 4vh;
+   margin-left: 5vw;
+}
 .topicname a{
     font-family:'Poppins', sans-serif;
     text-decoration: none;
-  
+    color: #726414;
+    
+}
+.topicname ul li {
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+    margin-top:2vh;
+    color: rgb(202, 11, 228);
 
+}
+.articlename{
+    margin-top: 5vh;
+    font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+
+    
+}
+h2 {
+    color: rgb(145, 82, 226)!important;
+}
+h3 {
+    color: rgb(201, 1, 141);
+    margin-left: 1vw;
 }
