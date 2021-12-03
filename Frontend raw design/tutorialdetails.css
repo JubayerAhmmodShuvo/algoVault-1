@@ -120,8 +120,6 @@ footer a:hover{
     text-decoration: underline;
     font-weight: bold;
 }
-
-
 .heading{
     color: #660000;
     font-family: 'Poppins', sans-serif;
@@ -153,7 +151,7 @@ p{
 }
 textarea{
     width: 50%;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh!important;
 }
 .button{
     background-color: #818FF2;
@@ -163,10 +161,35 @@ textarea{
     border-radius: 30px !important;
     color: white;
     margin-left: 41.5%;
-    margin-top: 3vh;!important;
+  
 
 }
 .button:hover{
     background-color: #094F6C;
     color: rgb(255, 255, 255);
+}
+.hr3{
+    color: black !important;
+    margin-top: 3vh!important;
+
+}
+.name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 2vh!important;
+    color: black;
+  
+
+}
+.date{
+    font-family: 'Poppins', sans-serif;
+  
+    color: black;
+  
+
+}
+    
+.replylink{
+    text-decoration: none;
+    margin-bottom: 2vh;
 }
