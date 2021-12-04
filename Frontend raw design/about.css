@@ -178,3 +178,25 @@ h5 {
 .img-box ul li {
     transition: all 0.5s ease-in-out 0s;
 }
+
+.breadcrumb-item{
+    margin-top: 20px;
+} 
+
+ 
+
+ 
+ .box li a {
+    font-family: '', cursive;
+font-size: 1rem;
+ color: #fff;
+text-decoration: none;
+text-align: center!important;
+
+
+
+ }
+ .box li a:hover{
+     color: rgb(240, 200, 200);
+     text-decoration: underline;
+ }
