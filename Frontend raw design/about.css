@@ -186,17 +186,3 @@ h5 {
  
 
  
- .box li a {
-    font-family: '', cursive;
-font-size: 1rem;
- color: #fff;
-text-decoration: none;
-text-align: center!important;
-
-
-
- }
- .box li a:hover{
-     color: rgb(240, 200, 200);
-     text-decoration: underline;
- }
