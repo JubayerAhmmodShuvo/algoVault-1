@@ -10,6 +10,16 @@ body {
     justify-content: center;
     text-align: center;
     margin-top:28%;
+   
+}
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+ 
+}
+p {
+    font-size: 1rem;
+   
 }
 
 /* navbar */
