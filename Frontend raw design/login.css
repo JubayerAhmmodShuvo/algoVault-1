@@ -97,6 +97,11 @@ body {
       margin-bottom: 2vh!important;
       
   }
+  .success p{
+    font-size: small;
+    color: green;
+    margin-bottom: 2vh!important;
+  }
 
   /*footer*/
 
