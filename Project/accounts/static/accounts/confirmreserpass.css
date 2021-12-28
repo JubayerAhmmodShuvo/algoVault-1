@@ -81,7 +81,12 @@ body {
     float:right;
     }
     
-    
+     .error p{
+      font-size: small;
+      color: rgb(255, 0, 0);
+      margin-bottom: 2vh!important;
+
+  }
   
   
   .btn:hover {

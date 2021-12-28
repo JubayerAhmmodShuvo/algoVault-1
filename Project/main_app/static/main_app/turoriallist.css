@@ -1,3 +1,4 @@
+
 body {
     background-color: FFFFFF !important;
     color: rgb(204, 204, 204) !important;
@@ -7,7 +8,7 @@ body {
   /*footer*/
 
   footer{
-  
+
     height: 36px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -17,7 +18,7 @@ body {
     text-align: center;
     margin-top:7px;
     color: white;
-   
+
 }
 footer  {
     text-decoration: none;
@@ -46,7 +47,7 @@ footer a:hover{
  .navbar{
     background-color: #094F6C;
     height: 7vh!important;
-    
+
  }
 .navbar-brand{
  font-family: 'Lobster', cursive;
@@ -54,16 +55,16 @@ footer a:hover{
     font-weight: normal;
     font-size: 2rem!important;
     font-weight: 500;
- 
+
  }
 
  .breadcrumb-item{
     margin-top: 20px;
-} 
+}
 
- 
 
- 
+
+
  .box li a {
     font-family: '', cursive;
 font-size: 1rem;
@@ -78,26 +79,6 @@ text-align: center!important;
      color: rgb(0, 0, 0);
      text-decoration: underline;
  }
-
-
-.nav-link{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 0px;
-    justify-content: space-between;
-    margin-top:1.5vh;
-}
-
-
-/* body */
-.card{
-    margin-top: 3vh;
-}
-
-
-
-/* tutorial list in home section */
 .topicname{
    margin-top: 7vh;
    margin-bottom: 4vh;
@@ -107,7 +88,7 @@ text-align: center!important;
     font-family:'Poppins', sans-serif;
     text-decoration: none;
     color: #726414;
-
+    
 }
 .topicname ul li {
     font-family:'Poppins', sans-serif;
@@ -121,7 +102,7 @@ text-align: center!important;
     font-family: 'Poppins', sans-serif;
    font-weight: 700;
 
-
+    
 }
 h2 {
     color: rgb(145, 82, 226)!important;
@@ -129,25 +110,4 @@ h2 {
 h3 {
     color: rgb(201, 1, 141);
     margin-left: 1vw;
-}
-
-form .shuvo{
-    background-color: #818FF2;
-    padding: 5px 5px;
-    border: 0;
-    font-family: 'poppins',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #FFFFFF;
-    font-size: 1rem;
-    width: 113px;
-    border-radius: 4px;
-    margin-right: 10px;
-    margin-left: 1.5vw;
-}
-
-form .shuvo:hover{
-    text-decoration: none;
-    background-color: rgb(148,181,231);
-    color: black;
 }

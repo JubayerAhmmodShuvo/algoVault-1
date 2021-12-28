@@ -3,12 +3,16 @@
 {% load static %}
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="{% static 'main_app/home.css' %}">
+    <!-- Bootstrap CSS -->
+
+{#     <link rel="stylesheet" href="{% static 'main_app/turoriallist.css' %}">#}
+     <link rel="stylesheet" href="{% static 'main_app/home.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/all.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/bootstrap.min.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +25,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <title>Tutorial Category</title>
 </head>
-<body>
-  <section>
 
-     <!-- navbar  -->
+<body>
+    <section>
+
+        <!-- navbar  -->
    <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'home' %}">AlgoVault</a>
@@ -50,7 +55,7 @@
 
     {% if user.is_authenticated %}
 
-        <form class="d-flex ">
+        <form class="d-flex">
             <div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ user.username }}
@@ -59,11 +64,9 @@
                     <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
                     <a class="dropdown-item" href="#">Notifications</a>
                 </div>
-
             </div>
-                 <button class="shuvo" type="submit" formaction="{% url 'logout' %}">Log Out</button>
+            <button class="logout-profile" type="submit" formaction="{% url 'logout' %}">Log Out</button>
         </form>
-
 
     {% else %}
         <div class="box  ">
@@ -75,8 +78,8 @@
         </div>
 
     {% endif %}
-     
-             
+
+
             <!-- <button class="bt" type="submit">Register</button> -->
             <!-- <button class="bt" type="submit">Login</button> -->
     </div>
@@ -86,49 +89,47 @@
     </nav>
     </section>
 
-    <div class="container">
-        <div class="card" >
-            <div class="card-body">
-              <h5 class="card-title text-dark">Topic 1</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Author Name  | Date  </h6>
-              <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at necessitatibus architecto, quia dicta excepturi deserunt odit quo facilis commodi, nobis ab mollitia nam reiciendis ad voluptatum, harum nulla fugit?
-              Nostrum error magnam iste dolorem voluptates voluptatum, ducimus, earum dolores libero labore quidem quasi nulla inventore fugiat asperiores officiis tempore! Veniam sapiente impedit ...</p>
-              <a href="{% url 'tutDetails' %}" class="card-link">More</a>
 
-            </div>
-          </div>
-          <div class="card" >
-            <div class="card-body">
-              <h5 class="card-title text-dark">Topic 2</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Author Name  |  Date  </h6>
-              <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at necessitatibus architecto, quia dicta excepturi deserunt odit quo facilis commodi, nobis ab mollitia nam reiciendis ad voluptatum, harum nulla fugit?
-              Nostrum error magnam iste dolorem voluptates voluptatum, ducimus, earum dolores libero labore quidem quasi nulla inventore fugiat asperiores officiis tempore! Veniam sapiente impedit animi ...</p>
-              <a href="{% url 'tutDetails' %}" class="card-link">More</a>
+<div class="container">
+    <h2 class="articlename">Tutorials</h2>
+    <h3 class="articlename">Algebra</h3>
+ <div class="topicname">
+     <ul>
+         <li> <a href="{% url 'tutDetails' %}">Binary Exponentiation</a></li>
+         <li> <a href="{% url 'tutDetails' %}">Euclidean algoritm for computing the greatest common divisor</a></li>
+         <li>  <a href="{% url 'tutDetails' %}">Extended Euclidean </a> </li>
+         <li> <a href="{% url 'tutDetails' %}">Linear Diophantine Equations</a></li>
+         <li><a href="{% url 'tutDetails' %}">Fibonacci Numbers</a></li>
+         <li><a href="{% url 'tutDetails' %}">Sieve of Eratosthenes</a></li>
+         <li> <a href="{% url 'tutDetails' %}">Linear Sieve</a></li>
+         <li> <a href="{% url 'tutDetails' %}">Integer factoriza</a></li>
+         <li> <a href="{% url 'tutDetails' %}">Priamlity tests</a></li>
+     </ul>
+</div>
+</div>
 
-            </div>
-          </div>
-          <div class="card" >
-            <div class="card-body">
-              <h5 class="card-title text-dark">Topic <i class="fas fa-signal-3    "></i></h5>
-              <h6 class="card-subtitle mb-2 text-muted">Author Name  |  Date   </h6>
-              <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at necessitatibus architecto, quia dicta excepturi deserunt odit quo facilis commodi, nobis ab mollitia nam reiciendis ad voluptatum, harum nulla fugit?
-              Nostrum error magnam iste dolorem voluptates voluptatum, ducimus, earum dolores libero labore quidem quasi nulla inventore fugiat asperiores officiis tempore! Veniam sapiente impedit animi magnam quos consequuntur ...</p>
-              <a href="{% url 'tutDetails' %}" class="card-link">More</a>
 
-            </div>
-          </div>
 
-    </div>
 
-        <footer  >
-            <h6> <a href="{% url 'contactUs' %}">Contact Us</a> </h6>
-            <h6> <a href="#">@AlgoVault</a>, INC</h6>
-          
-           
-            
-        </footer>
 
-    
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <h6> <a href="{% url 'contactUs' %}">Contact Us</a> </h6>
+        <h6> <a href="#">@AlgoVault</a>,INC</h6>
+
+
+
+    </footer>
+
 
 
 

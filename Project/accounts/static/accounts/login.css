@@ -91,12 +91,14 @@ body {
     color: black;
     
   }
-  p{
+ .error p{
       font-size: small;
       color: rgb(255, 0, 0);
       margin-bottom: 2vh!important;
       
   }
+
+
 
   /*footer*/
 
