@@ -6138,28 +6138,4 @@ readers do not read off random characters that represent icons */
 }
 
 
-/* logout css */
 
-form .logout-profile {
-    background-color: #818FF2;
-    padding: 5px 5px;
-    border: 0;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #FFFFFF;
-    font-size: 1em;
-    width: 113px;
-    border-radius: 4px;
-    margin-right: 10px;
-    margin-left: 1.5vw;
-}
-
-form .logout-profile:hover {
-    text-decoration: underline;
-    background-color: rgb(148, 181, 231);
-    color: black;
-}
-
-
-/* logout */

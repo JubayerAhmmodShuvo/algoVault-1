@@ -41,10 +41,10 @@
             <a class="nav-link" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Tutorials</a>
+            <a class="nav-link" href="{% url 'tutorials' %}">Tutorials</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="{% url 'aboutUs' %}">About Us</a>
         </li>
         </ul>
         <form class="d-flex" action="{% url 'signup' %}">
@@ -56,11 +56,7 @@
 </nav>
 
 <!-- loginform -->
-    {% if msg %}
-        <div class="container">
-            <h5 class="text-center">A confirmation email has been sent to your email address. Please confirm your email address by clicking that verification link. <a href="">Resend</a></h5>
-        </div>
-    {% endif %}
+
 
 <div class="container">
     <div class="login-form">
@@ -71,7 +67,11 @@
                 <span><i>Log In</i></span>
 
                 {% if error %}
-                    <p>{{ error }}</p>
+                    <p style="color: red ; font-size: small; ">{{ error }}</p>
+                {% endif %}
+
+                {% if success_msg %}
+                    <p style="color: green ; font-size: small; " >{{ success_msg }}</p>
                 {% endif %}
 
             </div>
@@ -86,7 +86,7 @@
                 <input type="submit" value="Login" class="btn login-account" >
             </div>
             <div class="form-group ">
-                <a href="#">Forgot your password?</a>
+                <a href="{% url 'reset_password' %}">Forgot your password?</a>
             </div>
         </form>
        

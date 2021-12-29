@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="{% static 'main_app/about.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/all.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/home.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/bootstrap.min.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,10 +46,10 @@
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tutorials</a>
+                        <a class="nav-link" href="{% url 'tutorials' %}">Tutorials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" area-current="page" href="#">About Us</a>
+                        <a class="nav-link active" area-current="page" href="{% url 'aboutUs' %}">About Us</a>
                     </li>
                 </ul>
 
