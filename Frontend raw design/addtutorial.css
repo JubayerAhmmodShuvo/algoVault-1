@@ -134,9 +134,9 @@ h4{
     color: black;
 
 }
-h6{
+h5{
     font-family: 'Poppins', sans-serif;
-    color: rgb(107, 95, 95);
+    color: black;
 
 }
 p{
@@ -186,6 +186,7 @@ textarea{
   
 
 }
+
 .date{
     font-family: 'Poppins', sans-serif;
   
