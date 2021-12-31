@@ -91,14 +91,39 @@
 
 
 <div class="container">
-<form action="">
+<form>
+ <div class="col-md-6">
     <div class="form-group">
-        <label for="name">Topic</label>
-        <input type="text" class="form-control">
+        <p class="titlename">Title:</p>
+        <input type="text" class="form-control mb-3 ">
     </div>
+ </div>
 </form>
+ <div class=" col-md-6">
+        <p class="topicname">Topic:</p>
+        <select name="" id="topic">
+                <option value="select topic">Select Topic</option>
+                <option value="Algorithms">Algorithms</option>
+                <option value="Data Structures">Data Structures</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Programming Languages">Programming Languages</option>
+                <option value="Operating Systems">Operating Systems</option>
+        </select>
+    </div>
+    <div class=" col-md-12">
+        <p class="description mt-3 ">Description</p>
+        <textarea name="message" placeholder="Brief Description Here" id="messagebox" cols="30" rows="10"></textarea>
+    </div>
+    <div class="col-md-12">
+        <div class="contact-btn ">
+            <button>Contact Us</button>
+        </div>
+        </div>
 
-
+    </div>
+    
+ </div>
 
 </div>
 
