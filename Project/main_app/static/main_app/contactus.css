@@ -1,11 +1,10 @@
 
+
 body {
-    background-color: FFFFFF !important;
+    background-color: #FFFFFF !important;
     color: rgb(204, 204, 204) !important;
 }
-.container{
-    background-color:white;
-}
+
 
 /* contactus */
 h1{
@@ -18,7 +17,12 @@ h1{
 }
 .contact-title h5{
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 8vh!important;
+    margin-bottom: 4vh!important;
+}
+p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    color: darkgoldenrod;
 }
 
 .contact-form input{
@@ -60,48 +64,35 @@ h1{
 }
 
 
-  /*footer*/
 
-  footer{
-  
-    height: 36px;
-    font-family: 'Poppins', sans-serif;
+
+
+form .shuvo{
+    background-color: #818FF2;
+    padding: 5px 5px;
+    border: 0;
+    font-family: 'poppins',sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 36px;
-    text-align: center;
-    margin-top:7px;
-    color: white;
-   
-}
-footer  {
-    text-decoration: none;
-    background-color: rgb(148, 181, 231);
-    color:white;
-   margin-top: 0vh;
-   background: #094F6C;
-   padding-top: 10px;
-   height: 72px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 1rem;
+    width: 113px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left: 1.5vw;
 }
 
-footer a{
+form .shuvo:hover{
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-style: normal;
-    margin-top: 80px!important;
-}
-footer a:hover{
-    color:white;
-    text-decoration: underline;
-    font-weight: bold;
+    background-color: rgb(148,181,231);
+    color: black;
 }
 
  /*navsection*/
  .navbar{
     background-color: #094F6C;
-    
+    height: 7vh!important;
+
  }
 .navbar-brand{
  font-family: 'Lobster', cursive;
@@ -109,63 +100,12 @@ footer a:hover{
     font-weight: normal;
     font-size: 2rem!important;
     font-weight: 500;
- 
- }
- .box{
-    font-family: 'Poppins';
-    font-weight: bold;
-    border: 0px solid #818FF2;
-    background-color: #818FF2;
-   
-    border-radius: 30px;
-    height: 4vh;
-    width: 160px;
-   padding: 6.5px;
-     
- 
 
  }
- .box li a {
-     font-size: 1rem;
-     margin-left: 5px;
-     margin-top: 20px;
-     align-items: center;
-     color: #fff;
-     text-decoration: none;
 
- }
- .box li a:hover{
-     color: rgb(0, 0, 0);
-     text-decoration: underline;
- }
-
- /* form .bt{ 
-     background-color: #818FF2;
-     padding: 5px 5px;
-     border: 0;
-     font-family: 'Poppins', sans-serif;
-     font-style: normal;
-     font-weight: 400;
-     color: #FFFFFF;
-     font-size: 1em;
-     width: 123px;
-     border-radius: 32px;
-     margin-right: 25px;
-    
+ .breadcrumb-item{
+    margin-top: 20px;
 }
-form .bt:hover{
-    text-decoration: underline;
-    background-color: rgb(148, 181, 231);
-    color: black;
 
-}*/
-.nav-link{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 0px;
-    justify-content: space-between;
-    margin-top:1.5vh;
-}
 
 

@@ -7,7 +7,9 @@ from main_app.models import Profile
 from .CredentialChecker import passwordCheck, usernameCheck
 from django.conf import settings
 from django.core.mail import send_mail
+from .decorators import unauthorized_user
 
+@unauthorized_user
 def user_login(request):
     if request.method == 'GET':
         return render(request, 'accounts/login.html')
@@ -35,6 +37,7 @@ def user_login(request):
         else:
             return render(request, 'accounts/login.html', {'error': 'Username or Password cannot be empty!'})
 
+@unauthorized_user
 def user_registration(request):
     if request.method == 'GET':
         return render(request, 'accounts/signup.html')
@@ -91,7 +94,7 @@ def user_logout(request):
     return redirect('home')
 
 
-
+@unauthorized_user
 def reset_password(request):
     if request.method == 'GET':
         return render(request, 'accounts/recoverpassword.html')
@@ -165,7 +168,7 @@ def verify_new_password_token(request, auth_token):
         print(e)
 
 
-
+@unauthorized_user
 def set_new_password(request, username):
     try:
         user = User.objects.get(username=username)

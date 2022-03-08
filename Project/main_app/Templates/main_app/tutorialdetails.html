@@ -43,10 +43,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-1 ">
         <li class="nav-item">
-            <a class="nav-link active" area-current="page" href="{% url 'home' %}">Home</a>
+            <a class="nav-link"  href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'tutorials' %}">Tutorials</a>
+            <a class="nav-link active" area-current="page" href="{% url 'tutorials' %}">Tutorials</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{% url 'aboutUs' %}">About Us</a>
@@ -62,10 +62,11 @@
                 </button>
                 <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
-                    <a class="dropdown-item" href="#">Notifications</a>
+                            <a class="dropdown-item" href="{% url 'approvedposts' %}">My Posts</a>
+                            <a class="dropdown-item" href="{% url 'progress' %}">My Progress</a>
                 </div>
             </div>
-            <button class="logout-profile" type="submit" formaction="{% url 'logout' %}">Log Out</button>
+            <button style="background-color: #818FF2;padding: 5px 5px;border: 0;font-family: 'poppins',sans-serif;font-style: normal;font-weight: 400;color: #FFFFFF;font-size: 1rem;width: 113px;border-radius: 4px;margin-right: 10px;margin-left: 1.5vw;" class="btn btn-primary" type="submit" formaction="{% url 'logout' %}">Log Out</button>
         </form>
 
     {% else %}
@@ -92,63 +93,48 @@
 
 
     <div class="container">
-        <h2 class="heading">Binary Exponentiation</h2>
+        <h2 class="heading">{{ tutorial.title }}</h2>
+        <h6>Written by: {{ tutorial.author.username }}</h6>
         <hr class="hr1">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque voluptatibus maxime beatae saepe non autem rem, unde assumenda fugiat molestiae, commodi, aliquam quibusdam fuga illo voluptatem perferendis veniam dolores omnis?
-Eos, odio exercitationem. Sequi nam earum cupiditate officia corporis consectetur vel nemo repudiandae! Fugit officia ut optio veniam in reprehenderit quis magni, commodi nesciunt at, a dignissimos minima fugiat dolorum.
-Laborum quaerat voluptatum quibusdam dolorum animi dolores quod, magnam, ad reiciendis, nam repudiandae doloremque eos quis alias rerum hic sunt. Ipsa earum modi expedita ullam fugit quos sit corrupti et.
-Nihil dolor eius perferendis a! Rerum, officia unde facere eius pariatur numquam ipsa nostrum quibusdam eum sequi, quos voluptas est ab veniam corrupti reprehenderit! Debitis voluptatem veniam laudantium neque fugit!
-Voluptate ipsum vitae in temporibus quae eum, laboriosam vel enim dolores? Aliquid id esse nihil accusantium maiores itaque dolorem quibusdam illum tenetur saepe optio inventore est, hic quia perferendis ipsum!
-Facilis cum reiciendis praesentium excepturi alias optio doloribus aliquid delectus vel fuga dolorum distinctio odit modi, maiores possimus rerum. Pariatur excepturi ratione vel quidem, doloribus sunt blanditiis iusto voluptas? Rem.
-Qui, nisi. Veniam eius cumque deleniti culpa consequuntur necessitatibus mollitia. Voluptatibus, dolorum. Possimus, officia est ducimus, labore amet sit eius quo rem, corrupti eum modi porro distinctio eligendi molestiae perspiciatis!
-Omnis totam perspiciatis praesentium voluptate ex impedit expedita porro. Totam tenetur obcaecati aliquid maiores labore dolor laboriosam eius rem quam, itaque adipisci laborum error omnis quasi harum mollitia eaque voluptatum!
-Velit totam libero at obcaecati hic ut voluptatum praesentium labore veritatis sequi, quos explicabo! Debitis itaque exercitationem delectus tenetur quis consequatur consequuntur esse consectetur voluptatum, vero accusantium dolor ipsum optio.
-Culpa repellendus odit rem at iste qui, soluta ipsa reiciendis nemo, earum porro. Consequatur excepturi cum hic laboriosam voluptates veritatis laborum, recusandae laudantium amet nam. Ipsam non libero ipsum facilis!
-Mollitia laboriosam quaerat modi error praesentium, veritatis corporis placeat, deserunt ex numquam, quia molestiae. Ipsa, porro eius nihil animi nobis officia ut fuga perspiciatis excepturi tenetur iusto molestiae et modi?
-Est corporis natus, obcaecati minus vel magnam beatae. Quidem officia et molestias eius doloribus! Expedita consequatur fugiat omnis consequuntur, totam temporibus accusamus, adipisci harum, tempore sed soluta repellendus natus laudantium.
-Possimus officia tempora, dolorum facere perspiciatis culpa dolore laborum labore vero aut eveniet, nostrum, ullam pariatur reprehenderit nobis temporibus. Distinctio natus consectetur, tempore asperiores expedita odit dolorem exercitationem corporis repellat!
-Ad culpa iste nisi libero voluptatem itaque in perferendis, tempore quia, nihil modi maxime accusantium harum ea repellendus quam dolores explicabo mollitia distinctio ipsam voluptates. Voluptas consectetur eaque voluptates excepturi!
-Facilis consequuntur eveniet repellendus, magni accusantium atque nihil aliquam eos repellat iste pariatur quisquam officia suscipit! Optio eligendi itaque dolorum dolore porro unde. Autem velit sint dicta nobis aspernatur eligendi!
-Ab modi quam ex? Facere consequatur ipsum odio numquam, at dolorem sit adipisci et nulla similique amet sint eum blanditiis corporis saepe? Dolore animi dolores, alias rem repellendus quibusdam itaque!
-Unde laudantium eaque facilis? Iste soluta veritatis aut dolores, non praesentium harum. Non quaerat nihil aliquam maiores tempora magnam libero explicabo ratione sit dolorum est vero, rem obcaecati delectus magni.
-Temporibus, ex quam! Modi, possimus quos inventore tempora nostrum itaque odit exercitationem minima enim animi dolor voluptatibus, reprehenderit voluptatum porro aperiam nulla quae voluptates amet! Sapiente quidem ipsum quis architecto.
-Quibusdam architecto, dolor expedita voluptatem dolore ut dolores optio alias veniam omnis natus minima temporibus facilis culpa accusantium aut debitis ducimus recusandae excepturi. Dolorem fugit fuga, quos deleniti cumque nihil.
-Perferendis quaerat eos iure quas mollitia, magni praesentium, quae voluptatum blanditiis quisquam repudiandae accusantium nostrum eligendi vero commodi nulla fugiat ullam! Reiciendis expedita ipsa mollitia dolorum iure exercitationem cupiditate veritatis?
-Quaerat inventore id voluptate numquam officiis repellat. Distinctio nesciunt totam facere iusto voluptates sunt maxime corrupti fugit sequi eligendi, sed atque velit adipisci. Necessitatibus consequuntur nihil, nam quas nisi ex!
-Doloremque libero officiis quasi officia, laboriosam iusto, voluptas, sed vero distinctio atque vitae accusantium reiciendis. Soluta pariatur numquam ipsum a distinctio facilis tempora dolorem, ea eos obcaecati enim excepturi! Minima?
-Totam dicta, officia eaque repellendus harum quisquam eum pariatur voluptatibus porro non impedit esse quo, corrupti quos dolores atque quibusdam, rem sunt unde architecto laborum repellat dolor veniam. Ratione, aliquam?
-Optio quisquam expedita ipsa hic deserunt provident numquam facere. Necessitatibus accusamus voluptatem fugiat blanditiis, voluptatibus libero praesentium hic corrupti! Accusantium, nesciunt. In voluptatum delectus fugiat cum eligendi dolor natus ad.
-Voluptatibus, vero? Iusto vel, quaerat, consectetur sequi fuga commodi alias harum odio dolorum ullam quas ipsam placeat voluptatem blanditiis veritatis culpa sint nam quasi earum, illum sit voluptates praesentium. Amet!</p>
-      
+<br>
+<p>{{ tutorial.content | safe }}</p>
+      <div class="col">
         <hr class="hr2">
+        <div class="d-grid gap-2 d-md-flex mt-4 justify-content-md-end">
+        <form action="{% url 'markdone' tutorial.id %}" method="POST">
+        {% csrf_token %}
+                {% if user.is_authenticated %}
+                    {% if not read %}
+                        <button class="btn btn-outline-primary" type="submit">Mark as Done</button>
+                    {% else %}
+                        <button class="btn btn-outline-primary" type="button" disabled>Mark as Done</button>
+                    {% endif %}
+                {% endif %}
+        </form>
+      </div>
+          </div>
+            <br><br>
 
-        <h4>Comment</h4>
       
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <textarea name="comment" placeholder="Add Comment" id="commentbox" cols="30" rows="10"></textarea>
-            </div>
-            <button class="button">Comment</button>
-            <hr class="hr3">
-            <h5 class="name">Name</h5>
-            <h6 class="date">Date</h6>
-            <p>his/her commentthis is a paragraph is showing their comment</p>
-            <a  class="replylink" href="#">Reply..</a>
-            
-        </div>
-        
-    </div>
-    <div class="container">
-        <div class="row reply">
-            <div class="col-md-12">
-                 <textarea name="reply" placeholder="Add Reply" id="replybox" cols="30" rows="10"></textarea>
-              
-            </div>
-            <button class="button">Reply</button>
-        </div>
-    </div>
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+    var disqus_config = function () {
+    this.page.url = 'http://127.0.0.1:8000/details/{{ tutorial.id }}';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = {{ tutorial.id }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://algovault.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
 
 

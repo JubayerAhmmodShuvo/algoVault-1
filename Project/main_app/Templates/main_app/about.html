@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="{% static 'main_app/about.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/all.css' %}">
-    <link rel="stylesheet" href="{% static 'main_app/home.css' %}">
+{#    <link rel="stylesheet" href="{% static 'main_app/home.css' %}">#}
     <link rel="stylesheet" href="{% static 'main_app/bootstrap.min.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,11 +62,15 @@
                             </button>
                             <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
-                                <a class="dropdown-item" href="#">Notifications</a>
+                                <a class="dropdown-item" href="{% url 'approvedposts' %}">My Posts</a>
+                                <a class="dropdown-item" href="{% url 'progress' %}">My Progress</a>
                             </div>
                         </div>
-                        <button class="logout-profile" type="submit" formaction="{% url 'logout' %}">Log Out</button>
+<button class="shuvo" type="submit" formaction="{% url 'logout' %}">Log Out</button>
+
+
                     </form>
+
 
                 {% else %}
                     <div class="box  ">
@@ -88,16 +92,14 @@
         <div class="row">
             <div class="col-md-12  ">
                 <H1>About The Project</H1><br>
-                <p class="sisi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo aspernatur quos repudiandae, cupiditate reiciendis amet eligendi quod aut eum itaque, omnis voluptas neque! Dolore repudiandae asperiores neque ea sit explicabo. Alias repellendus
-                    natus odio quam, maxime pariatur, accusantium ipsam excepturi harum assumenda impedit aliquam laboriosam molestias corrupti. Quisquam totam, architecto explicabo impedit minima tempore nemo earum laborum quos, ipsa corrupti! Porro,
-                    labore facilis sequi accusantium itaque nostrum ab ullam rem dignissimos, quod nesciunt. Vero blanditiis placeat sequi aspernatur ut soluta harum ea fugit beatae quod, explicabo magnam reiciendis inventore numquam. Natus dolorem quam
-                    minus ab perspiciatis numquam accusamus consequatur, nobis, recusandae est ullam corrupti ducimus error impedit? Et ipsum officia impedit obcaecati aperiam animi quia reiciendis. Nostrum, fugiat. Facere, magni. Delectus harum voluptas,
-                    temporibus aliquid perferendis nam commodi, incidunt veritatis voluptatum cumque perspiciatis mollitia tenetur praesentium molestias nemo quam aspernatur consequuntur eos ex voluptatibus distinctio ea! Voluptate id minus architecto.
-                    Provident excepturi explicabo eligendi quis delectus. Voluptas itaque minus voluptates delectus voluptate quaerat, beatae soluta exercitationem incidunt nisi hic. Maxime dolor praesentium deserunt sint tempore? Aut iure suscipit aliquid
-                    corrupti. Labore dolores eligendi repellendus minus impedit totam optio odio magnam sint vitae, pariatur ea quaerat! Vel nihil dolores quidem. Nisi deleniti expedita voluptatibus minus atque, exercitationem amet facilis nostrum dolores.
-                    Blanditiis laboriosam repudiandae pariatur accusamus voluptatum culpa dicta nostrum, nihil id facere sequi rem porro? Odio impedit aliquam cum dolorum, inventore numquam! Dolorem ad quam alias temporibus ipsum atque molestiae? Autem
-                    id praesentium incidunt illo, omnis quae, voluptate aliquam atque laborum accusantium ea fugiat culpa explicabo error deleniti hic quo? Quasi neque nesciunt excepturi sequi aspernatur fugiat quibusdam possimus aperiam. Magnam beatae
-                    ex nostrum eaque animi. Iure commodi fuga rem expedita debitis enim ab deserunt sed optio dolore quae et ipsam velit, repellat quam facilis magnam fugiat voluptatibus eum natus.</p>
+                <p class="sisi" style="font-size: 120%">In the path of programming and problem solving, mentors play a huge role for their
+mentees. In the beginning, a new programmer wouldn’t always know what to do or how
+to plan their learning paths. That is where mentors come as saviors. But it isn’t always
+easy to find a good and experienced mentor. Depending on the mentor, a programmer
+may become very good and go far or they might give up midways being demotivated
+and depressed. That is why we decided to build a system that would act as a mentor for
+programmers and will always be available to everybody. As such lowering the
+dependency on mentors for beginners.</p>
             </div>
         </div>
     </div>

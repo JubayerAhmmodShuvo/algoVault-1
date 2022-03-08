@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Profile, Tutorial
 
-# Register your models here.
+admin.site.register(Tutorial)
+admin.site.register(Profile)

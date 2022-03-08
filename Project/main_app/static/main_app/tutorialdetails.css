@@ -4,6 +4,80 @@ body {
     color: rgb(204, 204, 204) !important;
 }
 
+
+ 
+
+ /*navsection*/
+ .navbar{
+    background-color: #094F6C;
+    height: 7vh!important;
+    
+ }
+.navbar-brand{
+ font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem!important;
+    font-weight: 500;
+ 
+ }
+ .box{
+    font-family: 'Poppins';
+    font-weight: bold;
+    border: 0px solid #818FF2;
+    background-color: #818FF2;
+   
+    border-radius: 30px;
+    height: 4vh;
+    width: 160px;
+   padding: 6.5px;
+     
+ 
+
+ }
+ .box li a {
+     font-size: 1rem;
+     margin-left: 5px;
+     margin-top: 20px;
+     align-items: center;
+     color: #fff;
+     text-decoration: none;
+
+ }
+ .box li a:hover{
+     color: rgb(0, 0, 0);
+     text-decoration: underline;
+ }
+
+
+ /*navsection*/
+ .navbar{
+    background-color: #094F6C;
+    height: 7vh!important;
+    
+ }
+.navbar-brand{
+ font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem!important;
+    font-weight: 500;
+ 
+ }
+
+
+
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+   
+    font-size: 1em;
+    line-height: 0px;
+    justify-content: space-between;
+    margin-top: 1.5vh;
+}
+
+
 /* body */
 .card{
     margin-top: 3vh;
@@ -58,6 +132,11 @@ h4{
     font-weight: 700!important;
     margin-bottom: 3vh!important;
     color: black;
+
+}
+h6{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(107, 95, 95);
 
 }
 p{
@@ -118,73 +197,4 @@ textarea{
 .replylink{
     text-decoration: none;
     margin-bottom: 2vh;
-}
-/*navsection*/
- .navbar{
-    background-color: #094F6C;
-    height: 7vh!important;
-
- }
-.navbar-brand{
- font-family: 'Lobster', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2rem!important;
-    font-weight: 500;
-
- }
-
- .breadcrumb-item{
-    margin-top: 20px;
-}
-
-
-
-
- .box li a {
-    font-family: '', cursive;
-font-size: 1rem;
- color: #fff;
-text-decoration: none;
-text-align: center!important;
-
-
-
- }
- .box li a:hover{
-     color: rgb(0, 0, 0);
-     text-decoration: underline;
- }
-
- /* form .bt{
-     background-color: #818FF2;
-     padding: 5px 5px;
-     border: 0;
-     font-family: 'Poppins', sans-serif;
-     font-style: normal;
-     font-weight: 400;
-     color: #FFFFFF;
-     font-size: 1em;
-     width: 123px;
-     border-radius: 32px;
-     margin-right: 25px;
-
-}
-form .bt:hover{
-    text-decoration: underline;
-    background-color: rgb(148, 181, 231);
-    color: black;
-
-}*/
-.nav-link{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 0px;
-    justify-content: space-between;
-    margin-top:1.5vh;
-}
-
-h5{
-    margin-top: 5vh!important;
 }

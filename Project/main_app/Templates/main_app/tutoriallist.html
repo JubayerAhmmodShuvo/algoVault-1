@@ -11,8 +11,8 @@
 
     <!-- Bootstrap CSS -->
 
-{#     <link rel="stylesheet" href="{% static 'main_app/turoriallist.css' %}">#}
-     <link rel="stylesheet" href="{% static 'main_app/home.css' %}">
+{#  <link rel="stylesheet" href="{% static 'main_app/turoriallist.css' %}"#}
+    <link rel="stylesheet" href="{% static 'main_app/home.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/all.css' %}">
     <link rel="stylesheet" href="{% static 'main_app/bootstrap.min.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,10 +43,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-1 ">
         <li class="nav-item">
-            <a class="nav-link active" area-current="page" href="{% url 'home' %}">Home</a>
+            <a class="nav-link"  href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'tutorials' %}">Tutorials</a>
+            <a class="nav-link active" area-current="page" href="{% url 'tutorials' %}">Tutorials</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{% url 'aboutUs' %}">About Us</a>
@@ -62,10 +62,11 @@
                 </button>
                 <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
-                    <a class="dropdown-item" href="#">Notifications</a>
+                            <a class="dropdown-item" href="{% url 'approvedposts' %}">My Posts</a>
+                            <a class="dropdown-item" href="{% url 'progress' %}">My Progress</a>
                 </div>
             </div>
-            <button class="logout-profile" type="submit" formaction="{% url 'logout' %}">Log Out</button>
+           <button class="shuvo" type="submit" formaction="{% url 'logout' %}">Log Out</button>
         </form>
 
     {% else %}
@@ -89,24 +90,24 @@
     </nav>
     </section>
 
+    <div class="container">
+        <h2 class="articlename">Tutorials</h2>
+    </div>
 
-<div class="container">
-    <h2 class="articlename">Tutorials</h2>
-    <h3 class="articlename">Algebra</h3>
- <div class="topicname">
-     <ul>
-         <li> <a href="{% url 'tutDetails' %}">Binary Exponentiation</a></li>
-         <li> <a href="{% url 'tutDetails' %}">Euclidean algoritm for computing the greatest common divisor</a></li>
-         <li>  <a href="{% url 'tutDetails' %}">Extended Euclidean </a> </li>
-         <li> <a href="{% url 'tutDetails' %}">Linear Diophantine Equations</a></li>
-         <li><a href="{% url 'tutDetails' %}">Fibonacci Numbers</a></li>
-         <li><a href="{% url 'tutDetails' %}">Sieve of Eratosthenes</a></li>
-         <li> <a href="{% url 'tutDetails' %}">Linear Sieve</a></li>
-         <li> <a href="{% url 'tutDetails' %}">Integer factoriza</a></li>
-         <li> <a href="{% url 'tutDetails' %}">Priamlity tests</a></li>
-     </ul>
-</div>
-</div>
+    {% for tag, tutorial in tutorials.items %}
+        <div class="container">
+            <h3 class="articlename">{{ tag }}</h3>
+
+             <div class="topicname">
+                 <ul>
+                     {% for item in tutorial %}
+                        <li> <a href="{% url 'tutDetails' item.id %}">{{ item.title }}</a></li>
+                     {% endfor %}
+                 </ul>
+            </div>
+        </div>
+        <br>
+    {% endfor %}
 
 
 

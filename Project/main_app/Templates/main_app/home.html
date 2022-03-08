@@ -57,7 +57,8 @@
                 </button>
                 <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
-                    <a class="dropdown-item" href="#">Notifications</a>
+                            <a class="dropdown-item" href="{% url 'approvedposts' %}">My Posts</a>
+                            <a class="dropdown-item" href="{% url 'progress' %}">My Progress</a>
                 </div>
 
             </div>
@@ -88,45 +89,40 @@
 
     <div class="container">
         <div class="card" >
-            <div class="card-body">
-              <h5 class="card-title text-dark">Topic 1</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Author Name  | Date  </h6>
-              <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at necessitatibus architecto, quia dicta excepturi deserunt odit quo facilis commodi, nobis ab mollitia nam reiciendis ad voluptatum, harum nulla fugit?
-              Nostrum error magnam iste dolorem voluptates voluptatum, ducimus, earum dolores libero labore quidem quasi nulla inventore fugiat asperiores officiis tempore! Veniam sapiente impedit ...</p>
-              <a href="{% url 'tutDetails' %}" class="card-link">More</a>
+            {% for tut in tutorials %}
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #0b5ed7">{{ tut.title }}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"> {{ tut.author.username }}  </h6>
+                  <p class="card-text" style="color: black">{{ tut.content | safe | truncatechars_html:300 }}</p>
+                  <a href="{% url 'tutDetails' tut.id %}" class="card-link">More</a>
 
-            </div>
-          </div>
-          <div class="card" >
-            <div class="card-body">
-              <h5 class="card-title text-dark">Topic 2</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Author Name  |  Date  </h6>
-              <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at necessitatibus architecto, quia dicta excepturi deserunt odit quo facilis commodi, nobis ab mollitia nam reiciendis ad voluptatum, harum nulla fugit?
-              Nostrum error magnam iste dolorem voluptates voluptatum, ducimus, earum dolores libero labore quidem quasi nulla inventore fugiat asperiores officiis tempore! Veniam sapiente impedit animi ...</p>
-              <a href="{% url 'tutDetails' %}" class="card-link">More</a>
+                </div>
+            {% endfor %}
 
-            </div>
-          </div>
-          <div class="card" >
-            <div class="card-body">
-              <h5 class="card-title text-dark">Topic <i class="fas fa-signal-3    "></i></h5>
-              <h6 class="card-subtitle mb-2 text-muted">Author Name  |  Date   </h6>
-              <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at necessitatibus architecto, quia dicta excepturi deserunt odit quo facilis commodi, nobis ab mollitia nam reiciendis ad voluptatum, harum nulla fugit?
-              Nostrum error magnam iste dolorem voluptates voluptatum, ducimus, earum dolores libero labore quidem quasi nulla inventore fugiat asperiores officiis tempore! Veniam sapiente impedit animi magnam quos consequuntur ...</p>
-              <a href="{% url 'tutDetails' %}" class="card-link">More</a>
-
-            </div>
-          </div>
 
     </div>
+    </div>
+
+  <div style="text-align: right; margin-top: 2%;">
+            {% if tutorials.has_previous %}
+                <a href="?page={{ tutorials.previous_page_number }}" class="previous hover" style="margin-right: 2%; text-decoration: none;">&laquo; Previous</a>
+            {% else %}
+                <button type="button" disabled style="margin-right: 2%; text-decoration: none;">&laquo; Previous</button>
+            {% endif %}
+
+            {% if tutorials.has_next %}
+                <a href="?page={{ tutorials.next_page_number }}" class="next hover" style="margin-right: 20%; text-decoration: none;">Next &raquo;</a>
+            {% else %}
+                <button type="button" disabled style="margin-right: 20%;">Next &raquo;</button>
+            {% endif %}
+        </div>
+
 
         <footer  >
             <h6> <a href="{% url 'contactUs' %}">Contact Us</a> </h6>
             <h6> <a href="#">@AlgoVault</a>, INC</h6>
-          
-           
-            
         </footer>
+
 
     
 

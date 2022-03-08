@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.esm.js" integrity="sha512-Jmi+uNSDc8pyBNQbRkhwxqTtRsAzq1p0IK7dSLjaudwIIqoG2giyWRvsh4bbPd2mNSbK1GyEiBUO86RSs428UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>#}
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.js" integrity="sha512-uLlukEfSLB7gWRBvzpDnLGvzNUluF19IDEdUoyGAtaO0MVSBsQ+g3qhLRL3GTVoEzKpc24rVT6X1Pr5fmsShBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>#}
+
+    <link rel="stylesheet" href="{% static 'main_app/progress.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/all.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/bootstrap.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <title>Progress</title>
+</head>
+
+<body>
+    <section>
+
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">AlgoVault</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" area-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'tutorials' %}">Tutorials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'aboutUs' %}">About Us</a>
+                        </li>
+                    </ul>
+
+
+                    <!--<div class="box">
+                <div class="breadcrumb ">
+                    
+                  <li class="breadcrumb-item"><a href="#">Login</a></li>
+                  <li class="breadcrumb-item"><a href="#">Register</a></li>
+                </div>
+            </div>
+             
+            <button class="bt" type="submit">Register</button> -->
+                    <!-- <button class="bt" type="submit">Login</button> -->
+
+                </div>
+                <form class="d-flex">
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ user.username }}
+            </button>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
+                            <a class="dropdown-item" href="{% url 'approvedposts' %}">My Posts</a>
+                            <a class="dropdown-item" href="{% url 'progress' %}">My Progress</a>
+
+                        </div>
+                    </div>
+                    <button style="background-color: #818FF2;padding: 5px 5px;border: 0;font-family: 'poppins',sans-serif;font-style: normal;font-weight: 400;color: #FFFFFF;font-size: 1rem;width: 113px;border-radius: 4px;margin-right: 10px;margin-left: 1.5vw;" class="btn btn-primary" type="submit" formaction="{% url 'logout' %}">Log Out</button>
+                </form>
+            </div>
+
+
+
+        </nav>
+    </section>
+
+    <br>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+<script>
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: [
+            {% for label, val in qs.items %}
+                    '{{ label }}',
+            {% endfor %}
+        ],
+        datasets: [{
+            label: 'Progress Percentage',
+            data: [
+                {% for label, val in qs.items %}
+                    {{ val }},
+                {% endfor %}
+            ],
+            backgroundColor: [
+                "rgb(255, 99, 132)",
+                "rgb(54, 162, 235)",
+                "rgb(255, 206, 86)",
+                "rgb(75, 192, 192)",
+                "rgb(153, 102, 255)",
+              "rgb(255, 159, 64)",
+              "rgb(255, 105, 132)",
+              "rgb(54, 192, 235)",
+              "rgb(255, 206, 106)",
+              "rgb(95, 172, 192)",
+              "rgb(123, 102, 125)",
+              "rgb(235, 139, 64)",
+              "rgb(245, 199, 132)",
+              "rgb(54, 162, 215)",
+              "rgb(155, 216, 36)",
+              "rgb(255, 206, 46)",
+              "rgb(69, 69, 69)",
+              "rgb(215, 69, 79)",
+              "rgb(125, 116, 176)",
+              "rgb(235, 226, 146)",
+              "rgb(255, 99, 132)",
+              "rgb(54, 162, 235)",
+              "rgb(255, 206, 86)",
+              "rgb(75, 192, 192)",
+              "rgb(153, 102, 255)",
+              "rgb(255, 159, 64)",
+              "rgb(255, 105, 132)",
+              "rgb(54, 192, 235)",
+              "rgb(255, 206, 106)",
+              "rgb(95, 172, 192)",
+              "rgb(123, 102, 125)",
+              "rgb(235, 139, 64)",
+              "rgb(245, 199, 132)",
+              "rgb(54, 162, 215)",
+              "rgb(155, 216, 36)",
+              "rgb(255, 206, 46)",
+              "rgb(69, 69, 69)",
+              "rgb(215, 69, 79)",
+              "rgb(125, 116, 176)",
+              "rgb(235, 226, 146)",
+            ],
+            borderColor: [
+                "rgb(255, 99, 132)",
+                "rgb(54, 162, 235)",
+                "rgb(255, 206, 86)",
+                "rgb(75, 192, 192)",
+                "rgb(153, 102, 255)",
+              "rgb(255, 159, 64)",
+              "rgb(255, 105, 132)",
+              "rgb(54, 192, 235)",
+              "rgb(255, 206, 106)",
+              "rgb(95, 172, 192)",
+              "rgb(123, 102, 125)",
+              "rgb(235, 139, 64)",
+              "rgb(245, 199, 132)",
+              "rgb(54, 162, 215)",
+              "rgb(155, 216, 36)",
+              "rgb(255, 206, 46)",
+              "rgb(69, 69, 69)",
+              "rgb(215, 69, 79)",
+              "rgb(125, 116, 176)",
+              "rgb(235, 226, 146)",
+              "rgb(255, 99, 132)",
+              "rgb(54, 162, 235)",
+              "rgb(255, 206, 86)",
+              "rgb(75, 192, 192)",
+              "rgb(153, 102, 255)",
+              "rgb(255, 159, 64)",
+              "rgb(255, 105, 132)",
+              "rgb(54, 192, 235)",
+              "rgb(255, 206, 106)",
+              "rgb(95, 172, 192)",
+              "rgb(123, 102, 125)",
+              "rgb(235, 139, 64)",
+              "rgb(245, 199, 132)",
+              "rgb(54, 162, 215)",
+              "rgb(155, 216, 36)",
+              "rgb(255, 206, 46)",
+              "rgb(69, 69, 69)",
+              "rgb(215, 69, 79)",
+              "rgb(125, 116, 176)",
+              "rgb(235, 226, 146)",
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+
+
+<br><br><br><br>
+    <div class="container">
+        <h5 style="color: #17677a">Recommendations:</h5>
+        <p >You are recommended to read: </p>
+        <ul style="color: #1a1e21">
+            {% for topic, id in suggestions %}
+                {% if id == -1 %}
+                    <li><a href="#"> {{ topic }} </a></li>
+                {% else %}
+                    <li><a href="{% url 'tutDetails' id %}"> {{ topic }} </a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+
+
+    <footer>
+        <h6> <a href="{% url 'contactUs' %}">Contact Us</a> </h6>
+        <h6> <a href="#">@AlgoVault</a>,INC</h6>
+
+
+
+    </footer>
+
+
+
+
+    <script src="{% static 'main_app/all.js' %}"></script>
+    <script src="{% static 'main_app/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

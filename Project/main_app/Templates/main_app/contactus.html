@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,50 +26,76 @@
     <title>Contact Us</title>
 </head>
 <body>
-  <section>
-
+      <!-- navbar  -->
      <!-- navbar  -->
    <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">AlgoVault</a>
+      <a class="navbar-brand" href="{% url 'home' %}">AlgoVault</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-1 ">
         <li class="nav-item">
             <a class="nav-link"  href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'tutorials' %}">Tutorials</a>
+            <a class="nav-link active" area-current="page" href="{% url 'tutorials' %}">Tutorials</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{% url 'aboutUs' %}">About Us</a>
         </li>
         </ul>
-     
-    
+
+    {% if user.is_authenticated %}
+
+        <form class="d-flex">
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ user.username }}
+                </button>
+                <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
+                        <a class="dropdown-item" href="{% url 'approvedposts' %}">My Posts</a>
+                        <a class="dropdown-item" href="{% url 'progress' %}">My Progress</a>
+                </div>
+            </div>
+           <button class="shuvo" type="submit" formaction="{% url 'logout' %}">Log Out</button>
+        </form>
+
+    {% else %}
+        <div class="box  ">
+            <div class="breadcrumb">
+
+              <li class="breadcrumb-item"><a href="{% url 'login' %}">Login</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'signup' %}">Register</a></li>
+            </div>
+        </div>
+
+    {% endif %}
+
 
             <!-- <button class="bt" type="submit">Register</button> -->
             <!-- <button class="bt" type="submit">Login</button> -->
-           
     </div>
- 
+
     </div>
 
     </nav>
-      </section>
-  
     <!-- contact area -->
     <section class="contact-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="#" method="post" class="contact-form">
+                    <form action="{% url 'contactUs' %}" method="POST" class="contact-form">
+                        {% csrf_token %}
+
                         <div class="contact-title text-center text-dark">
                             <h1>Get In Touch</h1>
-                             <h5>Phone:+123456789 <br>
-                            Email:xyz@abc.com</h5>
+                             <h5>Email: contact.algovault@gmail.com</h5>
+                            {% if msg %}
+                                <p>Thank you for reaching out to us. We have received your message.</p>
+                            {% endif %}
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -89,7 +115,7 @@
                                     </div>
                                     <div class="col-md-12">
                                     <div class="contact-btn text-center">
-                                        <button>Contact Us</button>
+                                        <button type="submit">Contact Us</button>
                                     </div>
                                     </div>
                         </div>
